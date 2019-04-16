@@ -27,11 +27,7 @@ public class LoginPageTest extends TestBase	{
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Inregistreaza-te in MyVodafone - Vodafone");
 	}
-	
-	@Test
-	
-	
-	
+
 	
 	@AfterMethod
 	public void tearDown(){
