@@ -1,5 +1,7 @@
 package ro.vodafone.qa.pages;
 
-public class PostpaidBillPage {
+import ro.vodafone.qa.base.TestBase;
+
+public class PostpaidBillPage extends TestBase {
 
 }
