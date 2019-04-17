@@ -1,7 +1,5 @@
 package ro.vodafone.qa.pages;
 
-import static ro.vodafone.qa.base.TestBase.driver;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
