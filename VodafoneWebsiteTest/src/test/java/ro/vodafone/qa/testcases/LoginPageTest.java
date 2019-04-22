@@ -14,7 +14,6 @@ public class LoginPageTest extends TestBase	{
 	
 	LoginPage loginPage;
 	PostpaidDashboardPage postpaidDashboardPage;
-	TestUtil testUtil;
 	
 	public LoginPageTest(){
 		super();
@@ -24,7 +23,6 @@ public class LoginPageTest extends TestBase	{
 	public void setUp(){
 		initialization();
 		loginPage = new LoginPage();
-		testUtil = new TestUtil();
 	}
 	
 	@Test(priority=1)
