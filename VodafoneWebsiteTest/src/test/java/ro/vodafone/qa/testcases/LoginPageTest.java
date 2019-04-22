@@ -8,12 +8,17 @@ import org.testng.annotations.Test;
 import ro.vodafone.qa.base.TestBase;
 import ro.vodafone.qa.pages.LoginPage;
 import ro.vodafone.qa.pages.PostpaidDashboardPage;
-import ro.vodafone.qa.util.TestUtil;
+import ro.vodafone.qa.pages.RecoverPwdPage;
+import ro.vodafone.qa.pages.RecoverUsrnamePage;
+import ro.vodafone.qa.pages.RegisterPage;
 
 public class LoginPageTest extends TestBase	{
 	
 	LoginPage loginPage;
 	PostpaidDashboardPage postpaidDashboardPage;
+	RecoverUsrnamePage recoverUsrnamePage;
+	RecoverPwdPage recoverPwdPage;
+	RegisterPage registerPage;
 	
 	public LoginPageTest(){
 		super();
@@ -23,6 +28,9 @@ public class LoginPageTest extends TestBase	{
 	public void setUp(){
 		initialization();
 		loginPage = new LoginPage();
+		recoverUsrnamePage = new RecoverUsrnamePage();
+		recoverPwdPage = new RecoverPwdPage();
+		registerPage = new RegisterPage();
 	}
 	
 	@Test(priority=1)
@@ -39,8 +47,28 @@ public class LoginPageTest extends TestBase	{
 	
 	@Test(priority=3)
 	public void loginMethodTest(){
-		postpaidDashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		
+		postpaidDashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
+	}
+	
+	@Test(priority=4)
+	public void verifyRecoverUsrnamePageTitle(){
+		loginPage.forgotUsrname();
+		String title = recoverUsrnamePage.verifyRecoverUsrnamePageTitle();
+		Assert.assertEquals(title, "Recupereaza cont - MyVodafone - Vodafone");
+	}
+	
+	@Test(priority=5)
+	public void verifyRecoverPwdPageTitle(){
+		loginPage.forgotPwd();
+		String title = recoverPwdPage.verifyRecoverPwdPageTitle();
+		Assert.assertEquals(title, "Recuperare parola - Vodafone.ro");
+	}
+	
+	@Test(priority=6)
+	public void verifyRegisterPage(){
+		loginPage.contNouBtn();
+		String actual = registerPage.verifyBreadcrum();
+		Assert.assertEquals(actual, "Înregistrare");
 	}
 
 	

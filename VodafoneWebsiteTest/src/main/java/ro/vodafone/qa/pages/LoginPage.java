@@ -17,11 +17,17 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//button[@id='PortalDesktop_Authenticationauthenticate']")
 	WebElement loginBtn;
 
-	@FindBy(xpath="//body[@class='myvodafone autentificare']/div[@class='page-wrap']/div[@class='page']/div[@id='content']/div[@class='row']/div[@id='SSOBox_3_portletBox']/div[@id='SSOBox_3']/div[@class='port-authentication port-authentication-grid-3 grid-3']/form[@id='loginFormPortalDesktop_Authentication']/div[@class='form-row submit-row']/a[1]")
+	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[7]/a[1]")
 	WebElement contnouBtn;
 
 	@FindBy(partialLinkText="Logo Vodafo")
 	WebElement vdfLogo;
+	
+	@FindBy(xpath="//form[@name='LoginPortalDesktop_Authentication']//a[@title='Am uitat numele de utilizator'][contains(text(),'Am uitat numele de utilizator')]")
+	WebElement forgotUsrnameURL;
+	
+	@FindBy(xpath="//form[@name='LoginPortalDesktop_Authentication']//a[@title='Am uitat parola'][contains(text(),'Am uitat parola')]")
+	WebElement fogotPassURL;
 
 	public LoginPage(){
 		PageFactory.initElements(driver, this);
@@ -35,12 +41,29 @@ public class LoginPage extends TestBase{
 		return vdfLogo.isDisplayed();
 	}
 	
+	public RecoverUsrnamePage forgotUsrname(){
+		forgotUsrnameURL.click();
+		return new RecoverUsrnamePage();
+	}
+	
+	public RecoverPwdPage forgotPwd(){
+		fogotPassURL.click();
+		return new RecoverPwdPage();
+	}
+	
+	public RegisterPage contNouBtn(){
+		contnouBtn.click();
+		return new RegisterPage();
+	}
+	
 	public PostpaidDashboardPage login(String un,String pwd){
 		username.sendKeys(un);
 		password.sendKeys(pwd);
 		loginBtn.click();
 		return new PostpaidDashboardPage();
 	}
+	
+
 	
 	
 	
