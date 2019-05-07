@@ -7,7 +7,12 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="verifyRegisterPage"/>
+          <include name="verifyRecoverPwdPageTitle"/>
           <include name="loginMethodTest"/>
+          <include name="vdfLogoTest"/>
+          <include name="verifyRecoverUsrnamePageTitle"/>
+          <include name="loginPageTitleTest"/>
         </methods>
       </class> <!-- ro.vodafone.qa.testcases.LoginPageTest -->
     </classes>
