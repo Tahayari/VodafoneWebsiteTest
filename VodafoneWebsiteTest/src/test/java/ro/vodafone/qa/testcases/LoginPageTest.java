@@ -50,21 +50,21 @@ public class LoginPageTest extends TestBase	{
 		postpaidDashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
 	}
 	
-	@Test(priority=4)
+	@Test(priority=4,enabled=false)
 	public void verifyRecoverUsrnamePageTitle(){
 		loginPage.forgotUsrname();
 		String title = recoverUsrnamePage.verifyRecoverUsrnamePageTitle();
 		Assert.assertEquals(title, "Recupereaza cont - MyVodafone - Vodafone");
 	}
 	
-	@Test(priority=5)
+	@Test(priority=5,enabled=false)
 	public void verifyRecoverPwdPageTitle(){
 		loginPage.forgotPwd();
 		String title = recoverPwdPage.verifyRecoverPwdPageTitle();
 		Assert.assertEquals(title, "Recuperare parola - Vodafone.ro");
 	}
 	
-	@Test(priority=6)
+	@Test(priority=6,enabled=false)
 	public void verifyRegisterPage(){
 		loginPage.contNouBtn();
 		String actual = registerPage.verifyBreadcrum();

@@ -7,6 +7,8 @@ Do not call any of these methods, instead these methods will be invoked automati
 as an when the action done (click, findBy etc). 
  */
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -60,11 +62,11 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
 
-		//		try {
-		//			TestUtil.takeScreenshotAtEndOfTest();
-		//		} catch (IOException e) {
-		//			e.printStackTrace();
-		//		}
+				try {
+					TestUtil.takeScreenshotAtEndOfTest();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
