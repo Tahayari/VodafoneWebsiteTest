@@ -33,13 +33,13 @@ public class LoginPageTest extends TestBase	{
 		registerPage = new RegisterPage();
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,enabled=false)
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Inregistreaza-te in MyVodafone - Vodafone");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2,enabled=false)
 	public void vdfLogoTest(){
 		boolean flag = loginPage.validateVDFLogo();
 		Assert.assertTrue(flag);

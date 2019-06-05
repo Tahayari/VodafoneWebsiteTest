@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ro.vodafone.qa.testcases.LoginPageTest">
+      <class name="ro.vodafone.qa.testcases.LoginUsingDataSourceTest">
         <methods>
-          <include name="setUp"/>
+          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="loginMethodTest"/>
+          <include name="LoginPostpaidTest"/>
         </methods>
-      </class> <!-- ro.vodafone.qa.testcases.LoginPageTest -->
+      </class> <!-- ro.vodafone.qa.testcases.LoginUsingDataSourceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
