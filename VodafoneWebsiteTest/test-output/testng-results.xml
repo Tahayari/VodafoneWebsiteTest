@@ -1,21 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17270" started-at="2019-06-05T06:14:33Z" finished-at="2019-06-05T06:14:50Z">
+  <suite name="Default suite" duration-ms="92013" started-at="2019-06-20T10:29:12Z" finished-at="2019-06-20T10:30:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17270" started-at="2019-06-05T06:14:33Z" finished-at="2019-06-05T06:14:50Z">
+    <test name="Default test" duration-ms="92013" started-at="2019-06-20T10:29:12Z" finished-at="2019-06-20T10:30:44Z">
       <class name="ro.vodafone.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="14914" started-at="2019-06-05T06:14:33Z" finished-at="2019-06-05T06:14:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="16663" started-at="2019-06-20T10:29:12Z" finished-at="2019-06-20T10:29:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginMethodTest()[pri:3, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="loginMethodTest" duration-ms="1173" started-at="2019-06-05T06:14:48Z" finished-at="2019-06-05T06:14:49Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="loginPageTitleTest" duration-ms="869" started-at="2019-06-20T10:29:29Z" finished-at="2019-06-20T10:29:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="988" started-at="2019-06-20T10:29:30Z" finished-at="2019-06-20T10:29:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="10239" started-at="2019-06-20T10:29:30Z" finished-at="2019-06-20T10:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="vdfLogoTest()[pri:2, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="vdfLogoTest" duration-ms="955" started-at="2019-06-20T10:29:41Z" finished-at="2019-06-20T10:29:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vdfLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="971" started-at="2019-06-20T10:29:42Z" finished-at="2019-06-20T10:29:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="10573" started-at="2019-06-20T10:29:43Z" finished-at="2019-06-20T10:29:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginMethodTest()[pri:3, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="loginMethodTest" duration-ms="1367" started-at="2019-06-20T10:29:53Z" finished-at="2019-06-20T10:29:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethodTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="1139" started-at="2019-06-05T06:14:49Z" finished-at="2019-06-05T06:14:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="968" started-at="2019-06-20T10:29:55Z" finished-at="2019-06-20T10:29:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="9627" started-at="2019-06-20T10:29:56Z" finished-at="2019-06-20T10:30:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRecoverUsrnamePageTitle()[pri:4, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="verifyRecoverUsrnamePageTitle" duration-ms="4637" started-at="2019-06-20T10:30:05Z" finished-at="2019-06-20T10:30:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecoverUsrnamePageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="1069" started-at="2019-06-20T10:30:10Z" finished-at="2019-06-20T10:30:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="10962" started-at="2019-06-20T10:30:11Z" finished-at="2019-06-20T10:30:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRecoverPwdPageTitle()[pri:5, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="verifyRecoverPwdPageTitle" duration-ms="4225" started-at="2019-06-20T10:30:22Z" finished-at="2019-06-20T10:30:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecoverPwdPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="954" started-at="2019-06-20T10:30:26Z" finished-at="2019-06-20T10:30:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="setUp" is-config="true" duration-ms="10759" started-at="2019-06-20T10:30:27Z" finished-at="2019-06-20T10:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterPage()[pri:6, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="verifyRegisterPage" duration-ms="5153" started-at="2019-06-20T10:30:38Z" finished-at="2019-06-20T10:30:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ro.vodafone.qa.testcases.LoginPageTest@6eebc39e]" name="tearDown" is-config="true" duration-ms="990" started-at="2019-06-20T10:30:43Z" finished-at="2019-06-20T10:30:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -33,44 +33,49 @@ public class LoginPageTest extends TestBase	{
 		registerPage = new RegisterPage();
 	}
 	
-	@Test(priority=1,enabled=false)
+	// Verify Login Page Title
+	@Test(priority=1,enabled=true)
 	public void loginPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Inregistreaza-te in MyVodafone - Vodafone");
 	}
 	
-	@Test(priority=2,enabled=false)
+	// Validate VDF Logo
+	@Test(priority=2,enabled=true)
 	public void vdfLogoTest(){
 		boolean flag = loginPage.validateVDFLogo();
 		Assert.assertTrue(flag);
 	}
 	
+	// Validate Login from authentication page
 	@Test(priority=3)
 	public void loginMethodTest(){
 		postpaidDashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
 	}
 	
-	@Test(priority=4,enabled=false)
+	// Verify Recover username page title
+	@Test(priority=4,enabled=true)
 	public void verifyRecoverUsrnamePageTitle(){
 		loginPage.forgotUsrname();
 		String title = recoverUsrnamePage.verifyRecoverUsrnamePageTitle();
 		Assert.assertEquals(title, "Recupereaza cont - MyVodafone - Vodafone");
 	}
 	
-	@Test(priority=5,enabled=false)
+	// Verify Recover password page title
+	@Test(priority=5,enabled=true)
 	public void verifyRecoverPwdPageTitle(){
 		loginPage.forgotPwd();
 		String title = recoverPwdPage.verifyRecoverPwdPageTitle();
 		Assert.assertEquals(title, "Recuperare parola - Vodafone.ro");
 	}
 	
-	@Test(priority=6,enabled=false)
+	// Verify Register page breadcrum
+	@Test(priority=6,enabled=true)
 	public void verifyRegisterPage(){
 		loginPage.contNouBtn();
 		String actual = registerPage.verifyBreadcrum();
 		Assert.assertEquals(actual, "Înregistrare");
 	}
-
 	
 	@AfterMethod
 	public void tearDown(){
